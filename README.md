@@ -16,9 +16,9 @@ NLW Together - Let me ask. ReactJS Web App.
       - [x] setupTests.ts;
     - [x] Arquivo "public/index.html":
       - [x] Limpar a tag "<header>";
-        - Manter as tags "meta" e "title";
+        - [x] Manter as tags "meta" e "title";
       - [x] Limpar o tab "<body>";
-        - Manter o "noscript" e a "div#root";
+        - [x] Manter o "noscript" e a "div#root";
     - [x] Arquivo "src/index.tsx":
       - [x] Remover comentários e "repostWebVitals";
       - [x] Remover a importação do "index.css";
@@ -26,4 +26,5 @@ NLW Together - Let me ask. ReactJS Web App.
       - [x] Remover imports;
       - [x] Alterar o conteúdo para "Hello World";
     - [x] Rodar o APP pela primeira vez:
+      - [x] Terminal / New Terminal
       - [x] <code>yarn start</code>
