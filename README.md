@@ -1,7 +1,7 @@
 # nlw-together-letmeask
 NLW Together - Let me ask. ReactJS Web App.
 
-# Aula 1
+# Aula 1 - 20/06/2021
 - [x] Criar o APP:
   - [x] <code>yarn create react-app letmeask --template typescript</code>
 - [x] Fazer primeiro COMMIT
@@ -58,3 +58,6 @@ NLW Together - Let me ask. ReactJS Web App.
     - REACT_APP_MESSAGING_SENDER_ID
     - REACT_APP_APP_ID
   - [x] Segundo COMMIT
+- [x] Código do sorteio: #together
+
+# Aula 2
