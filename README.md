@@ -4,7 +4,7 @@ NLW Together - Let me ask. ReactJS Web App.
 # Aula 1
 - [x] Criar o APP:
   - [x] <code>yarn create react-app letmeask --template typescript</code>
-- [ ] Fazer primeiro COMMIT
+- [x] Fazer primeiro COMMIT
   - [x] Limpar estrutura desnecessária:
     - [x] Da pasta "public" remover tudo que não é o "index.html";
     - [x] Da pasta "src" remover:
@@ -28,3 +28,33 @@ NLW Together - Let me ask. ReactJS Web App.
     - [x] Rodar o APP pela primeira vez:
       - [x] Terminal / New Terminal
       - [x] <code>yarn start</code>
+- [x] Criar o projeto no firebase:
+  - [x] console.firebase.google.com
+  - [x] br-com-fym-letmeask
+  - [x] Authentication:
+    - [x] Google
+    - [x] Enabled
+    - [x] Nome do projeto: letmeask-web
+    - [x] Configurar email de suporte
+    - [ ] Se um dia houver a necessidade de puclicar essa aplicação existe a necessidade de Automizar o dominio.
+  - [x] Realtime Database:
+    - [x] Create Database
+    - [x] Manter a localização
+    - [x] Iniciar no modo bloqueado
+    - [x] Button: Enable
+  - [x] Project Overview
+    - [x] Add an app to get started: WEB
+    - [x] App Nickname: LetMeAsk Web
+    - [x] Register app
+- [x] De volta ao projeto:
+  - [x] <code>yarn add firebase</code>
+  - [x] "src/services/firebase.ts"
+  - [x] .env.local
+    - REACT_APP_API_KEY
+    - REACT_APP_AUTH_DOMAIN
+    - REACT_APP_DATABASE_URL
+    - REACT_APP_PROJECT_ID
+    - REACT_APP_STORAGE_BUCKET
+    - REACT_APP_MESSAGING_SENDER_ID
+    - REACT_APP_APP_ID
+  - [x] Segundo COMMIT
