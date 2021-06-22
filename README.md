@@ -3,7 +3,9 @@ NLW Together - Let me ask. ReactJS Web App.
 
 # Aula 1 - 20/06/2021
 - [x] Criar o APP:
-  - [x] <code>yarn create react-app letmeask --template typescript</code>
+```
+yarn create react-app letmeask --template typescript
+```
 - [x] Fazer primeiro COMMIT
   - [x] Limpar estrutura desnecessária:
     - [x] Da pasta "public" remover tudo que não é o "index.html";
@@ -27,7 +29,9 @@ NLW Together - Let me ask. ReactJS Web App.
       - [x] Alterar o conteúdo para "Hello World";
     - [x] Rodar o APP pela primeira vez:
       - [x] Terminal / New Terminal
-      - [x] <code>yarn start</code>
+```
+yarn start
+```
 - [x] Criar o projeto no firebase:
   - [x] console.firebase.google.com
   - [x] br-com-fym-letmeask
@@ -47,7 +51,9 @@ NLW Together - Let me ask. ReactJS Web App.
     - [x] App Nickname: LetMeAsk Web
     - [x] Register app
 - [x] De volta ao projeto:
-  - [x] <code>yarn add firebase</code>
+```
+yarn add firebase
+```
   - [x] "src/services/firebase.ts"
   - [x] .env.local
     - REACT_APP_API_KEY
@@ -60,8 +66,45 @@ NLW Together - Let me ask. ReactJS Web App.
   - [x] Segundo COMMIT
 - [x] Código do sorteio: #together
 
-# Aula 2
+# Aula 2 - 22/06/2021
 - [x] Terceiro commit (Quick lunch time coding)
-  - [x] <code>yarn add node-sass@^5.0.0</code>
+```
+yarn add node-sass@^5.0.0
+```
   - [x] Criando e estilizando a HOME Page
   - [x] Video stop at 37:15.
+
+- [x] Quarto commit:
+  - [x] Adicionar componente Button
+  - [x] Adicionar NewRoom Page
+  - [x] Adicionar Navegação
+```
+yarn add react-router-dom
+```
+```
+yarn add @types/react-router-dom -D
+```
+  - [x] Fazer autenticação com o Google
+```javascript
+const singInWithGoogle = async () => {
+  const provider = new firebase.auth.GoogleAuthProvider();
+  const result = await auth.signInWithPopup(provider);
+  if (!result.user) {
+    return;
+  }
+  const { displayName, photoURL, uid } = result.user;
+  if (!displayName || !photoURL) {
+    throw new Error('Missing information from Google Account.');
+  }
+  setUser({
+    id: uid,
+    name: displayName,
+    avatar: photoURL,
+  });
+};
+```
+  - [x] Recuperar estado de autenticação
+  - [x] Criando hook de autenticação
+
+# Aula 3 - 22/06/2021
+  
