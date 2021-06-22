@@ -61,3 +61,7 @@ NLW Together - Let me ask. ReactJS Web App.
 - [x] Código do sorteio: #together
 
 # Aula 2
+- [x] Terceiro commit (Quick lunch time coding)
+  - [x] <code>yarn add node-sass@^5.0.0</code>
+  - [x] Criando e estilizando a HOME Page
+  - [x] Video stop at 37:15.
