@@ -60,6 +60,7 @@ export function Home() {
             <input
               type="text"
               placeholder="Digite o código da sala"
+              value={roomCode}
               onChange={event => setRoomCode(event.target.value)}
             />
             <Button type="submit">Entrar na sala</Button>

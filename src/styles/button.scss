@@ -1,7 +1,6 @@
 // TODO - PX to EM
 // TODO - Variables
-button {
-  margin-top: 64px;
+.button {
   height: 50px;
   border-radius: 8px;
   font-weight: 500;
@@ -26,6 +25,7 @@ button {
   &:not(:disabled):hover,
   &:not(:disabled):focus {
     filter: brightness(0.9);
+    text-decoration: underline;
   }
 
   &:disabled {
