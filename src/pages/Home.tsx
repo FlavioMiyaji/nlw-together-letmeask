@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FormEvent } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import illistrationSvg from '../assets/images/illustration.svg';
@@ -20,6 +20,9 @@ export function Home() {
     }
     history.push('/rooms/new');
   };
+  const handleEnterRoom = (event: FormEvent) => {
+    event.preventDefault();
+  };
 
   return (
     <div id="page-auth">
@@ -39,11 +42,9 @@ export function Home() {
             Crie sua sala com o Google
           </Button>
           <div className="separator">ou entre em sua sala</div>
-          <form >
+          <form onSubmit={handleEnterRoom}>
             <input type="text" placeholder="Digite o código da sala" />
-            <Button type="submit">
-              Entrar na sala
-            </Button>
+            <Button type="submit">Entrar na sala</Button>
           </form>
         </div>
       </main>

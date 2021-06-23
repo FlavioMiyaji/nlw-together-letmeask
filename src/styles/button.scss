@@ -23,7 +23,8 @@ button {
     margin-right: 8px;
   }
 
-  &:not(:disabled):hover {
+  &:not(:disabled):hover,
+  &:not(:disabled):focus {
     filter: brightness(0.9);
   }
 

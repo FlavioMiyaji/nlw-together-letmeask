@@ -1,6 +1,7 @@
 import React, {
   createContext,
   ReactNode,
+  useCallback,
   useEffect,
   useState,
 } from "react";
@@ -27,42 +28,25 @@ type Props = {
 function AuthContextProvider({ children }: Props) {
   const [user, setUser] = useState<User>();
 
-  useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged(user => {
-      if (!user) {
-        return;
-      }
-      const { displayName, photoURL, uid } = user;
-      if (!displayName || !photoURL) {
-        throw new Error('Missing information from Google Account.');
-      }
-
-      setUser({
-        id: uid,
-        name: displayName,
-        avatar: photoURL,
-      });
-    });
-    return () => unsubscribe();
-  }, []);
-
-  const singInWithGoogle = async () => {
-    const provider = new firebase.auth.GoogleAuthProvider();
-    const result = await auth.signInWithPopup(provider);
-    if (!result.user) {
-      return;
-    }
-    const { displayName, photoURL, uid } = result.user;
-    if (!displayName || !photoURL) {
+  const changeUser = useCallback((user: firebase.User | null) => {
+    if (!user) return;
+    const { uid: id, displayName: name, photoURL: avatar } = user;
+    if (!name || !avatar) {
       throw new Error('Missing information from Google Account.');
     }
+    setUser({ id, name, avatar });
+  }, [setUser]);
 
-    setUser({
-      id: uid,
-      name: displayName,
-      avatar: photoURL,
-    });
-  };
+  const singInWithGoogle = useCallback(async () => {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    const result = await auth.signInWithPopup(provider);
+    if (result) changeUser(result.user);
+  }, [changeUser]);
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged(user => changeUser(user));
+    return () => unsubscribe();
+  }, [changeUser]);
   return (
     <AuthContext.Provider value={{ user, singInWithGoogle }}>
       {children}
