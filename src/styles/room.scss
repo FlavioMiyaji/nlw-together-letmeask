@@ -19,6 +19,7 @@
     max-width: 800px;
     margin: 0 auto;
   }
+
   .room-title{
     margin: 32px 0 24px;
     display: flex;
@@ -48,7 +49,7 @@
       padding: 16px;
       border-radius: 8px;
       background-color: #fefefe;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, .04);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, .4);
       resize: vertical;
       min-height: 130px;
     }
@@ -100,5 +101,9 @@
         }
       }
     }
+  }
+
+  .question-list {
+    margin-top: 32px;
   }
 }

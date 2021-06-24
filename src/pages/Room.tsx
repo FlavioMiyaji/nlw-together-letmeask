@@ -1,40 +1,21 @@
 import React, {
+  useState,
   FormEvent,
   useCallback,
-  useEffect,
-  useState
 } from 'react';
 import { useParams } from 'react-router-dom';
 
+import { Question } from '../components/Question';
 import { RoomCode } from '../components/RoomCode';
 import { Button } from '../components/Button';
 
 import logoSvg from '../assets/images/logo.svg';
 
+import { useRoom } from '../hooks/useRoom';
 import { useAuth } from '../hooks/useAuth';
 import { database } from '../services/firebase';
 
 import '../styles/room.scss';
-
-type Author = {
-  name: string;
-  avatar: string;
-};
-
-type FirebaseQuestions = Record<string, {
-  author: Author;
-  content: string;
-  isAnswered: boolean;
-  isHighlighted: boolean;
-}>;
-
-type Question = {
-  id: string;
-  author: Author;
-  content: string;
-  isAnswered: boolean;
-  isHighlighted: boolean;
-};
 
 type RoomParams = {
   id: string;
@@ -45,35 +26,7 @@ export function Room() {
   const { id: roomId } = params;
   const { user } = useAuth();
   const [newQuestion, setNewQuestion] = useState('');
-  const [questions, setQuestions] = useState<Question[]>([]);
-  const [title, setTitle] = useState('');
-
-  useEffect(() => {
-    const roomRef = database.ref(`rooms/${roomId}`);
-    // TODO - Check - Read Event Types (Child Added/Changed/Removed/Moved)
-    // once -> on
-    roomRef.on('value', room => {
-      const databaseRoom = room.val();
-      const firebaseQuestions: FirebaseQuestions = databaseRoom.questions ?? {};
-      const parseQuestions = Object.entries(firebaseQuestions).map(([key, value]) => {
-        const {
-          author,
-          content,
-          isAnswered,
-          isHighlighted,
-        } = value;
-        return {
-          id: key,
-          author,
-          content,
-          isAnswered,
-          isHighlighted,
-        };
-      });
-      setTitle(databaseRoom.title);
-      setQuestions(parseQuestions);
-    });
-  }, [roomId]);
+  const { title, questions } = useRoom(roomId);
 
   const handleSendQuestion = useCallback(async (event: FormEvent) => {
     event.preventDefault();
@@ -134,6 +87,16 @@ export function Room() {
             </Button>
           </div>
         </form>
+        {(questions && questions.length) && (
+          <div className="question-list">
+            {questions.map((question) => (
+              <Question
+                key={question.id}
+                data={question}
+              />
+            ))}
+          </div>
+        )}
       </main>
     </div>
   );
