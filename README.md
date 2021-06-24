@@ -6,8 +6,10 @@ NLW Together - Let me ask. ReactJS Web App.
   - Porque estamos juntos nessa missão. É com junto com vc que estamos construindo tudo isso. E é por isso que não abrimos mão de nossa comunidade. O NLW é um evento feito para a comunidade se reunir e evoluir em unidade. Esse sincronismo é poderodo. Você já percebeu o quanto estar junto de outros devs que resporam tecnologia, focados em um objetivo comum, compartilhando informações e cooperando faz vc evoluir mais rápido. Essa é a essência no NLW. O nosso time inteiro para pra colocar toda a energia em ajudar cada dev que está com a gente nessa missão. Não existem limites se a gente estiver junto, um ajudando o outro, um contribuindo com o outro. Por isso, sempre que tiver oportunidades como essa, aproveite. Você vai acelerar a evolução de todo o ecossistema. É pra isso que construimos o NLW. Para evoluirmos juntos.
 - [x] 2. #unidade
   - Unidade é Ação coletiva, que tende a um unico objetivo; Significa união, integração e cooperação. Na unidade não significa que todos se tornam iguais, que as diferenças desapareçam, mas significa que cada um soma com o grupo ao caminhar junto numa mesma visão. num mesmo propósito com os demais, para chegar no nosso objetivo. O próximo nível.
-- [ ] 3. #embuscadeevolução
+- [x] 3. #embuscadeevolução
   - O universo é infinito, não existem limites para o que podemos construir, a evolução é necessária, não existe inércia, precisamos estar sempre em busca do próximo nível porque a tecnologia não para de evoluir.
+- [ ] 4. #legacy
+  - Nos importamos com o legado. É sobre isso. Sobre fazer parte da solução, fazer a diferença no mundo através das linhas de código. Contruir soluções que deixem o mundo melhor, mais próspero.
 
 # Aula 1 - 20/06/2021
 - [x] Criar o APP:
@@ -153,4 +155,4 @@ const singInWithGoogle = async () => {
     - [ ] https://firebase.google.com/docs/database/admin/retrieve-data#value
   - [ ] Criando hook ``useRoom``
 
-# Aula 4
+# Aula 4 - 24/06/2021
