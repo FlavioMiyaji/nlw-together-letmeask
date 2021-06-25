@@ -10,8 +10,8 @@ NLW Together - Let me ask. ReactJS Web App.
   - O universo é infinito, não existem limites para o que podemos construir, a evolução é necessária, não existe inércia, precisamos estar sempre em busca do próximo nível porque a tecnologia não para de evoluir.
 - [x] 4. #legacy
   - Nos importamos com o legado. É sobre isso. Sobre fazer parte da solução, fazer a diferença no mundo através das linhas de código. Contruir soluções que deixem o mundo melhor, mais próspero.
-- [ ] 5. #
-  - 
+- [x] 5. juntos no próximo nível
+  - Chegamos ao fim de mais uma edição e agora, em um novo nível, cravamos a nossa bandeira. Parabéns por chegar até aqui. Com tudo o que a gente viu nessas 5 aulas práticas e com base em todos os feedbacks, eu tenho certeza que você avoluiu muito. Então comemore o momento e lembre-se: O aprendizado é contínuo e sempre haverá um próximo nível.
 
 # Aula 1 - Liftoff - 20/06/2021
 - [x] Criar o APP:
@@ -164,7 +164,9 @@ const singInWithGoogle = async () => {
   - [x] Página de sala (admin)
   - [x] Funcionalidade de like
   - [ ] Componente de modal
-    - [ ] ```react-modal```
+```
+react-modal
+```
   - [x] Remoção de pergunta
   - [x] Encerrar/Fechar sala
 
@@ -173,7 +175,9 @@ const singInWithGoogle = async () => {
   - [x] HTML e CSS de destaque e respondida
   - [x] Dar destaque na pergunta
   - [x] Marcar como respondida
-    - [x] ```yarn add classnames```
+```
+yarn add classnames
+```
   - [ ] Hospedando projeto
     - [ ] ```npm install -g firebase-tools```
     - [ ] ```firebase login```
@@ -198,3 +202,7 @@ const singInWithGoogle = async () => {
   - [ ] Tema dark
   - [ ] Versão PWA
   - [ ] Outro banco de dados
+  - [ ] Styled Components
+  - [ ] ESLint, Prettier
+  - [x] Github
+  - [ ] Melhorar o README.md
