@@ -1,6 +1,7 @@
 import React, {
   ReactNode,
 } from 'react';
+import classnames from 'classnames';
 
 import { UserInfo } from '../UserInfo';
 
@@ -14,6 +15,8 @@ type Author = {
 type QuestionProps = {
   content: string;
   author: Author;
+  isAnswered?: boolean;
+  isHighlighted?: boolean;
 };
 
 type Props = {
@@ -23,13 +26,24 @@ type Props = {
 
 export function Question(props: Props) {
   const { data, children } = props;
-  const { content, author } = data;
+  const {
+    content,
+    author,
+    isAnswered = false,
+    isHighlighted = false,
+  } = data;
   return (
-    <div className="question">
+    <div
+      className={classnames(
+        'question',
+        { answered: isAnswered },
+        { highlighted: (!isAnswered && isHighlighted) },
+      )}
+    >
       <p>{content}</p>
       <footer>
         <UserInfo data={author} />
-        <div>{children}</div>
+        <div className="actions">{children}</div>
       </footer>
     </div>
   );

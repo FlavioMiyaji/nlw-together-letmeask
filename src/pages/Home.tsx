@@ -28,7 +28,7 @@ export function Home() {
   }, [user, history, singInWithGoogle]);
   const handleJoinRoom = useCallback(async (event: FormEvent) => {
     event.preventDefault();
-    if (!roomCode.trim().length) return;
+    if (roomCode.trim().length <= 0) return;
 
     const roomRef = await database.ref(`rooms/${roomCode}`).get();
     if (!roomRef.exists()) {
@@ -36,7 +36,7 @@ export function Home() {
       return;
     }
     if (roomRef.val().closedAt) {
-      alert('Essa sala já foi fechada!');
+      alert('Essa sala já foi encerrada!');
       return;
     }
     history.push(`/rooms/${roomCode.trim()}`);

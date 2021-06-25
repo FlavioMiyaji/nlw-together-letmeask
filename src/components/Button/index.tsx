@@ -1,4 +1,7 @@
-import React, { ButtonHTMLAttributes } from 'react';
+import React, {
+  ButtonHTMLAttributes,
+} from 'react';
+import classnames from 'classnames';
 
 import './styles.scss';
 
@@ -16,13 +19,13 @@ export function Button(props: Props) {
   if (className?.trim().length) {
     classes += ` ${className}`;
   }
-  if (isOutlined) {
-    classes += ' outlined';
-  }
   return (
     <button
       {...rest}
-      className={classes}
+      className={classnames(
+        classes,
+        { outlined: isOutlined },
+      )}
     />
   );
 };
