@@ -11,7 +11,7 @@ NLW Together - Let me ask. ReactJS Web App.
 - [ ] 4. #legacy
   - Nos importamos com o legado. É sobre isso. Sobre fazer parte da solução, fazer a diferença no mundo através das linhas de código. Contruir soluções que deixem o mundo melhor, mais próspero.
 
-# Aula 1 - 20/06/2021
+# Aula 1 - Liftoff - 20/06/2021
 - [x] Criar o APP:
 ```
 yarn create react-app letmeask --template typescript
@@ -78,7 +78,7 @@ REACT_APP_APP_ID
   - [x] Segundo COMMIT
 - [x] Código do sorteio: #together
 
-# Aula 2 - 22/06/2021
+# Aula 2 - Maximum Speed - 22/06/2021
 - [x] Terceiro commit (Quick lunch time coding)
 ```
 yarn add node-sass@^5.0.0
@@ -118,7 +118,7 @@ const singInWithGoogle = async () => {
   - [x] Recuperar estado de autenticação
   - [x] Criando hook de autenticação
 
-# Aula 3 - 22/06/2021
+# Aula 3 - In Orbit - 22/06/2021
   
 - [x] Fluxo de salas:
   - [x] Criação de salas
@@ -155,4 +155,15 @@ const singInWithGoogle = async () => {
     - [ ] https://firebase.google.com/docs/database/admin/retrieve-data#value
   - [ ] Criando hook ``useRoom``
 
-# Aula 4 - 24/06/2021
+# Aula 4 - Landing - 24/06/2021
+- [ ] Conteúdo técnico
+  - [x] Estrutura das perguntas (HTML + CSS)
+  - [x] Criando hook ``useRoom``
+  - [x] Página de sala (admin)
+  - [x] Funcionalidade de like
+  - [ ] Componente de modal
+    - [ ] ```react-modal```
+  - [x] Remoção de pergunta
+  - [ ] Encerrar sala
+
+# Aula 5 - Surface Exploration - 24/06/2021
