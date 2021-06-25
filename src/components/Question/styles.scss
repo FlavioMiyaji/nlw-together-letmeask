@@ -17,24 +17,44 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 24px;
-  }
 
-  .user-info{
-    display: flex;
-    align-items: center;
+    button {
+      border: 0;
+      outline: none;
+      background-color: transparent;
+      cursor: pointer;
+      transition: filter .2s;
+      padding: 4px;
+      border-radius: 2px;
 
-    img {
-      width: 26px;
-      height: 26px;
-      border: 2px solid #29292e;
-      border-radius: 50%;
-    }
+      &.like-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #737380;
+        gap: 8px;
 
-    span {
-      margin-left: 8px;
-      color: #737380;
-      font-weight: 500;
-      font-size: 14px;
+        svg path {
+          stroke: #737380;
+        }
+
+        &.liked {
+          color: #835AFD;
+
+          svg path {
+            stroke: #835AFD;
+          }
+        }
+      }
+
+      &:hover, &:focus {
+        filter: brightness(.8);
+      }
+
+      &:focus {
+        text-decoration: underline;
+        background-color: rgba( 0, 0, 0, .2);
+      }
     }
   }
 }

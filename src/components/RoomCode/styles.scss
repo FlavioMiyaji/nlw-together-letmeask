@@ -6,9 +6,19 @@
   background-color: #fefefe;
   border: 1px solid #835AFD;
   cursor: pointer;
+  outline: none;
 
   display: flex;
   align-items: center;
+
+  &:not(:disabled):hover,
+  &:not(:disabled):focus {
+    filter: brightness(0.9);
+  }
+
+  &:not(:disabled):focus {
+    text-decoration: underline;
+  }
 
   div {
     background-color: #835AFD;

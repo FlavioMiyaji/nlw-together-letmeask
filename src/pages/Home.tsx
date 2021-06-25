@@ -10,7 +10,7 @@ import logoSvg from '../assets/images/logo.svg';
 import googleIconSvg from '../assets/images/google-icon.svg';
 
 import { useAuth } from '../hooks/useAuth';
-import { Button } from '../components/Button';
+import { Button } from '../components';
 
 import '../styles/auth.scss'
 import { database } from '../services/firebase';
@@ -33,6 +33,10 @@ export function Home() {
     const roomRef = await database.ref(`rooms/${roomCode}`).get();
     if (!roomRef.exists()) {
       alert('Essa sala não existe!');
+      return;
+    }
+    if (roomRef.val().closedAt) {
+      alert('Essa sala já foi fechada!');
       return;
     }
     history.push(`/rooms/${roomCode.trim()}`);
