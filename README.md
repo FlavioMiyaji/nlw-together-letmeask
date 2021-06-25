@@ -8,8 +8,10 @@ NLW Together - Let me ask. ReactJS Web App.
   - Unidade é Ação coletiva, que tende a um unico objetivo; Significa união, integração e cooperação. Na unidade não significa que todos se tornam iguais, que as diferenças desapareçam, mas significa que cada um soma com o grupo ao caminhar junto numa mesma visão. num mesmo propósito com os demais, para chegar no nosso objetivo. O próximo nível.
 - [x] 3. #embuscadeevolução
   - O universo é infinito, não existem limites para o que podemos construir, a evolução é necessária, não existe inércia, precisamos estar sempre em busca do próximo nível porque a tecnologia não para de evoluir.
-- [ ] 4. #legacy
+- [x] 4. #legacy
   - Nos importamos com o legado. É sobre isso. Sobre fazer parte da solução, fazer a diferença no mundo através das linhas de código. Contruir soluções que deixem o mundo melhor, mais próspero.
+- [ ] 5. #
+  - 
 
 # Aula 1 - Liftoff - 20/06/2021
 - [x] Criar o APP:
@@ -164,6 +166,35 @@ const singInWithGoogle = async () => {
   - [ ] Componente de modal
     - [ ] ```react-modal```
   - [x] Remoção de pergunta
-  - [ ] Encerrar sala
+  - [x] Encerrar/Fechar sala
 
 # Aula 5 - Surface Exploration - 24/06/2021
+- [x] Controles de Admin: Conteúdo técnico
+  - [x] HTML e CSS de destaque e respondida
+  - [x] Dar destaque na pergunta
+  - [x] Marcar como respondida
+    - [x] ```yarn add classnames```
+  - [ ] Hospedando projeto
+    - [ ] ```npm install -g firebase-tools```
+    - [ ] ```firebase login```
+    - [ ] ```firebase init```
+      - Deve estar dentro da pasta do projeto
+      - Questions:
+        - Realtime Database
+        - Hosting
+        - Use an existing project
+          - Selecionar o projeto
+        - database.rules.json
+        - build (public directory?)
+        - Y (single-page app)
+        - DEPENDE (Deploy with GitHub?)
+    - [ ] https://create-react-app.dev/docs/deployment#firebase
+    - [ ] Garantir que as variáveis de ambiente ".env.local" também está no ambiente de produção.
+    - [ ] ```yarn build```
+    - [ ] ```firebase deploy```
+
+- [ ] Como levar o projeto para o próximo nível
+  - [ ] Responsividade
+  - [ ] Tema dark
+  - [ ] Versão PWA
+  - [ ] Outro banco de dados
