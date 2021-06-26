@@ -1,11 +1,12 @@
 @import '../../styles/colors.scss';
+@import '../../styles/fonts.scss';
 
 // TODO - PX to EM
 // TODO - Variables
 .button {
   height: 50px;
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: $weight-highlight;
   background-color: $primary;
   color: $secondary100;
   padding: 0 32px;

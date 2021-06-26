@@ -1,4 +1,5 @@
 @import 'colors.scss';
+@import 'fonts.scss';
 
 #page-room {
   header {
@@ -38,8 +39,8 @@
     align-items: center;
 
     h1 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 24px;
+      font-family: $family-regular;
+      font-size: $size-highlight;
       color: $heading;
     }
 
@@ -49,8 +50,8 @@
       border-radius: 20px;
       padding: 8px 16px;
       color: $secondary100;
-      font-weight: 500;
-      font-size: 14px;
+      font-weight: $weight-highlight;
+      font-size: $size-regular;
     }
   }
 
@@ -74,9 +75,9 @@
       margin-top: 16px;
 
       > span {
-        font-size: 14px;
+        font-size: $size-regular;
         color: $secondary50;
-        font-weight: 500;
+        font-weight: $weight-highlight;
 
         button {
           background-color: transparent;
@@ -84,8 +85,8 @@
           color: $primary;
           text-decoration: underline;
           outline: none;
-          font-size: 14px;
-          font-weight: 500;
+          font-size: $size-regular;
+          font-weight: $weight-highlight;
           cursor: pointer;
 
           &:hover, &:focus {

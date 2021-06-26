@@ -1,0 +1,15 @@
+$family-header: 'Poppins', sans-serif;
+$family-highlight: 'Roboto', sans-serif;
+$family-regular: 'Roboto', sans-serif;
+
+$size-header: 2.2rem;
+$size-highlight: 1.6rem;
+$size-regular: 0.9rem;
+
+$weight-header: 700;
+$weight-highlight: 500;
+$weight-regular: 400;
+
+$font-header: $weight-header $size-header $family-header;
+$font-highlight: $weight-highlight $size-highlight $family-highlight;
+$font-regular: $weight-regular $size-regular $family-regular;

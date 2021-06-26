@@ -1,4 +1,5 @@
 @import 'colors.scss';
+@import 'fonts.scss';
 
 // TODO - PX to EM
 // TODO - Variables
@@ -24,13 +25,13 @@
     }
 
     strong {
-      font: 700 36px 'Poppins', sans-serif;
+      font: $font-header;
       line-height: 42px;
       margin-top: 16px;
     }
 
     p {
-      font-size: 24px;
+      font-size: $size-highlight;
       line-height: 32px;
       margin-top: 16px;
       color: $secondary100;
@@ -60,9 +61,9 @@
   }
 
   h2 {
-    font-size: 24px;
+    font-size: $size-highlight;
     margin: 64px 0 24px;
-    font-family: 'Poppins', sans-serif;
+    font-family: $family-regular;
   }
 
   form {
@@ -85,7 +86,7 @@
   }
 
   p {
-    font-size: 14px;
+    font-size: $size-regular;
     color: $secondary50;
     margin-top: 16px;
 
@@ -105,7 +106,7 @@
   }
 
   .separator {
-    font-size: 14px;
+    font-size: $size-regular;
     color: $secondary30;
 
     margin: 32px 0;
