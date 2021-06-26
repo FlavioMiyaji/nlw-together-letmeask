@@ -3,7 +3,7 @@ import React, {
   FormEvent,
   useCallback,
 } from 'react';
-import { useParams } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 
 import {
   Button,
@@ -24,6 +24,7 @@ type RoomParams = {
 };
 
 export function Room() {
+  const history = useHistory();
   const params = useParams<RoomParams>();
   const { id: roomId } = params;
   const { user } = useAuth();
@@ -64,11 +65,13 @@ export function Room() {
       await database.ref(`${basePath}/${likedId}`).remove();
     }
   }, [roomId, user]);
+  const handleGoHome = useCallback(() => history.push('/'), [history]);
+
   return (
     <div id="page-room">
       <header>
         <div className="content">
-          <img src={Images.logo} alt="LetMeAsk" />
+          <img src={Images.logo} alt="LetMeAsk" onClick={handleGoHome} />
           <RoomCode code={roomId} />
         </div>
       </header>

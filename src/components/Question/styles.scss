@@ -2,12 +2,12 @@
 
 .question {
   background-color: $secondary100;
-  border-radius: 8px;
-  box-shadow: 0 2px 12px $shadow;
-  padding: 24px;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 1rem $shadow;
+  padding: 1.6rem;
 
   & + .question {
-    margin-top: 8px;
+    margin-top: 0.5rem;
   }
 
   &.highlighted {
@@ -31,7 +31,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 24px;
+    margin-top: 1.6rem;
 
     .actions {
       display: flex;
@@ -54,7 +54,7 @@
         align-items: center;
         justify-content: center;
         color: $secondary50;
-        gap: 8px;
+        gap: 0.5rem;
 
         svg path {
           stroke: $secondary50;

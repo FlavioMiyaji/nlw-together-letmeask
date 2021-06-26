@@ -4,12 +4,12 @@
 // TODO - PX to EM
 // TODO - Variables
 .button {
-  height: 50px;
-  border-radius: 8px;
+  height: 3.1rem;
+  border-radius: 0.5rem;
   font-weight: $weight-highlight;
   background-color: $primary;
   color: $secondary100;
-  padding: 0 32px;
+  padding: 0 2rem;
 
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@
   transition: filter 0.2s;
 
   img {
-    margin-right: 8px;
+    margin-right: 0.5rem;
   }
 
   &.outlined {

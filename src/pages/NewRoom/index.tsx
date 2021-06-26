@@ -1,6 +1,7 @@
 import React, {
   useState,
   FormEvent,
+  useCallback,
 } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 
@@ -16,7 +17,7 @@ export function NewRoom() {
   const history = useHistory();
   const { user } = useAuth();
   const [newRoom, setNewRoom] = useState('');
-  const handleCreateRoom = async (event: FormEvent) => {
+  const handleCreateRoom = useCallback(async (event: FormEvent) => {
     event.preventDefault();
     if (newRoom.trim().length <= 0) return;
     const roomRef = database.ref('rooms');
@@ -25,7 +26,7 @@ export function NewRoom() {
       authorId: user?.id,
     });
     history.push(`/rooms/${firebaseRoom.key}`);
-  };
+  }, [history, newRoom, user?.id]);
 
   return (
     <div id="page-auth">

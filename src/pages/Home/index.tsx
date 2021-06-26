@@ -3,7 +3,7 @@ import React, {
   FormEvent,
   useCallback,
 } from 'react';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import { Images } from '../../assets';
 

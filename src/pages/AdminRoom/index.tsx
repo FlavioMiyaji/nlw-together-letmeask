@@ -53,11 +53,13 @@ export function AdminRoom() {
     if (!window.confirm('Tem certeza que você deseja excluir esta pergunta?')) return;
     await database.ref(`rooms/${roomId}/questions/${questionId}`).remove();
   }, [roomId]);
+  const handleGoHome = useCallback(() => history.push('/'), [history]);
+
   return (
     <div id="page-room">
       <header>
         <div className="content">
-          <img src={Images.logo} alt="LetMeAsk" />
+          <img src={Images.logo} alt="LetMeAsk" onClick={handleGoHome} />
           <div >
             <RoomCode code={roomId} />
             <Button

@@ -6,8 +6,8 @@
   align-items: center;
 
   .avatar {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     background-color: $heading;
     border-radius: 50%;
 
@@ -20,7 +20,7 @@
   }
 
   span {
-    margin-left: 8px;
+    margin-left: 0.5rem;
     color: $secondary50;
     font-weight: $weight-highlight;
     font-size: $size-regular;

@@ -18,42 +18,42 @@
     flex-direction: column;
     justify-content: center;
 
-    padding: 120px 80px;
+    padding: 7.5rem 5rem;
 
     img {
-      max-width: 320px;
+      max-width: 20rem;
     }
 
     strong {
       font: $font-header;
-      line-height: 42px;
-      margin-top: 16px;
+      line-height: 2.5rem;
+      margin-top: 1rem;
     }
 
     p {
       font-size: $size-highlight;
-      line-height: 32px;
-      margin-top: 16px;
+      line-height: 2rem;
+      margin-top: 1rem;
       color: $secondary100;
     }
   }
 
   main {
     flex: 8;
-
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1.6rem;
   }
 
   .main-content {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 320px;
+    max-width: 20rem;
     align-items: stretch;
     text-align: center;
-    gap: 16px;
+    gap: 1rem;
 
     > img {
       align-self: center;
@@ -62,22 +62,28 @@
 
   h2 {
     font-size: $size-highlight;
-    margin: 64px 0 24px;
+    margin: 4rem 0 1.6rem;
     font-family: $family-regular;
   }
 
   form {
     input {
-      height: 50px;
-      border-radius: 8px;
-      padding: 0 16px;
+      height: 3.1rem;
+      border-radius: 0.5rem;
+      padding: 1rem;
       background-color: $secondary100;
-      border: 1px solid $secondary30;
-      margin-bottom: 64px;
+      border: 1px solid $secondary100;
+      box-shadow: 0 2px 1rem $shadow;
+      margin-bottom: 4rem;
+      outline: none;
+
+      &:focus {
+        border: 1px solid $primary;
+      }
     }
 
     button {
-      margin-top: 16px;
+      margin-top: 1rem;
     }
 
     input, button {
@@ -88,11 +94,11 @@
   p {
     font-size: $size-regular;
     color: $secondary50;
-    margin-top: 16px;
+    margin-top: 1rem;
 
     a {
       color: $link;
-      margin-left: 8PX;
+      margin-left: 0.5rem;
     }
   }
 
@@ -101,7 +107,7 @@
     color: $secondary100;
 
     img {
-      margin-right: 8px;
+      margin-right: 0.5rem;
     }
   }
 
@@ -109,7 +115,7 @@
     font-size: $size-regular;
     color: $secondary30;
 
-    margin: 32px 0;
+    margin: 2rem 0;
     display: flex;
     align-items: center;
 
@@ -118,7 +124,7 @@
       flex: 1;
       height: 1px;
       background-color: $secondary30;
-      margin-right: 16px;
+      margin-right: 1rem;
     }
 
     &::after {
@@ -126,7 +132,7 @@
       flex: 1;
       height: 1px;
       background-color: $secondary30;
-      margin-left: 16px;
+      margin-left: 1rem;
     }
   }
 }

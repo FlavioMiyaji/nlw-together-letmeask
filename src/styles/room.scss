@@ -3,38 +3,39 @@
 
 #page-room {
   header {
-    padding: 24px;
+    padding: 1.6rem;
     border-bottom: 1px solid $secondary70;
 
-    .content{
-      max-width: 1120px;
+    .content {
+      max-width: 75rem;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
 
       > img {
-        max-height: 45px;
+        max-height: 3rem;
+        cursor: pointer;
       }
 
       > div {
         display: flex;
-        gap: 16px;
+        gap: 1rem;
 
         button {
-          height: 40px;
+          height: 2.5rem;
         }
       }
     }
   }
 
   main {
-    max-width: 800px;
+    max-width: 50rem;
     margin: 0 auto;
   }
 
   .room-title{
-    margin: 32px 0 24px;
+    margin: 2rem 0 1.6rem;
     display: flex;
     align-items: center;
 
@@ -45,10 +46,10 @@
     }
 
     span {
-      margin-left: 16px;
+      margin-left: 1rem;
       background-color: $link;
-      border-radius: 20px;
-      padding: 8px 16px;
+      border-radius: 1.5rem;
+      padding: 0.5rem 1rem;
       color: $secondary100;
       font-weight: $weight-highlight;
       font-size: $size-regular;
@@ -58,21 +59,25 @@
   form {
     textarea {
       width: 100%;
-      border: 0;
-      padding: 16px;
-      border-radius: 8px;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid $secondary100;
       background-color: $secondary100;
-      box-shadow: 0 2px 12px $shadow;
+      box-shadow: 0 2px 1rem $shadow;
       resize: vertical;
-      min-height: 130px;
+      min-height: 8rem;
       outline: none;
+
+      &:focus {
+        border: 1px solid $primary;
+      }
     }
 
     .form-footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 16px;
+      margin-top: 1rem;
 
       > span {
         font-size: $size-regular;
@@ -99,6 +104,6 @@
   }
 
   .question-list {
-    margin: 32px 0;
+    margin: 2rem 0;
   }
 }
