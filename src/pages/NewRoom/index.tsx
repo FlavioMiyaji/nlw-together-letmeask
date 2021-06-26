@@ -4,10 +4,7 @@ import React, {
 } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 
-import {
-  illustrationSvg,
-  logoSvg,
-} from '../../assets/images';
+import { Images } from '../../assets';
 
 import { database } from '../../services/firebase';
 import { Button } from '../../components';
@@ -33,13 +30,13 @@ export function NewRoom() {
   return (
     <div id="page-auth">
       <aside>
-        <img src={illustrationSvg} alt="Ilustração simbolizando perguntas e resposta" />
+        <img src={Images.illustration} alt="Ilustração simbolizando perguntas e resposta" />
         <strong>Crie salas de Q&amp;A ao-vivo</strong>
         <p>Tire as dúvidas da sua audiência em tempo-real</p>
       </aside>
       <main>
         <div className="main-content">
-          <img src={logoSvg} alt="LetMeAsk" />
+          <img src={Images.logo} alt="LetMeAsk" />
           <h2>Criar uma nova sala</h2>
           <form onSubmit={handleCreateRoom}>
             <input

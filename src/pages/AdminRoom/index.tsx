@@ -6,12 +6,7 @@ import { useHistory, useParams } from 'react-router-dom';
 
 import { Button, Question, RoomCode } from '../../components';
 
-import {
-  logoSvg,
-  deleteSvg,
-  answerSvg,
-  checkSvg,
-} from '../../assets/images';
+import { Images } from '../../assets';
 
 import { useRoom } from '../../hooks';
 
@@ -62,7 +57,7 @@ export function AdminRoom() {
     <div id="page-room">
       <header>
         <div className="content">
-          <img src={logoSvg} alt="LetMeAsk" />
+          <img src={Images.logo} alt="LetMeAsk" />
           <div >
             <RoomCode code={roomId} />
             <Button
@@ -92,13 +87,13 @@ export function AdminRoom() {
                       type="button"
                       onClick={e => handleCheckQuestionAsAnswered(e, question.id)}
                     >
-                      <img src={checkSvg} alt="Marcar pergunta como respondida" />
+                      <img src={Images.check} alt="Marcar pergunta como respondida" />
                     </button>
                     <button
                       type="button"
                       onClick={e => handleHighlightQuestion(e, question.id)}
                     >
-                      <img src={answerSvg} alt="Dar destaque à pergunta" />
+                      <img src={Images.answer} alt="Dar destaque à pergunta" />
                     </button>
                   </>
                 )}
@@ -106,7 +101,7 @@ export function AdminRoom() {
                   type="button"
                   onClick={e => handleDeleteQuestion(e, question.id)}
                 >
-                  <img src={deleteSvg} alt="Remover pergunta" />
+                  <img src={Images.remove} alt="Remover pergunta" />
                 </button>
               </Question>
             ))}

@@ -1,7 +1,9 @@
+@import '../../styles/colors.scss';
+
 .question {
-  background-color: #fefefe;
+  background-color: $secondary100;
   border-radius: 8px;
-  box-shadow: 0 2px 12px rgba( 0, 0, 0, .4);
+  box-shadow: 0 2px 12px $shadow;
   padding: 24px;
 
   & + .question {
@@ -9,20 +11,20 @@
   }
 
   &.highlighted {
-    background-color: #F4F0FF;
-    border: 1px solid #835AFD;
+    background-color: $secondary80;
+    border: 1px solid $primary;
 
     footer .user-info span {
-      color: #29292E;
+      color: $heading;
     }
   }
 
   &.answered {
-    background-color: #DBDCDD;
+    background-color: $secondary70;
   }
 
   p {
-    color: #29292e;
+    color: $heading;
   }
 
   footer {
@@ -51,18 +53,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #737380;
+        color: $secondary50;
         gap: 8px;
 
         svg path {
-          stroke: #737380;
+          stroke: $secondary50;
         }
 
         &.liked {
-          color: #835AFD;
+          color: $primary;
 
           svg path {
-            stroke: #835AFD;
+            stroke: $primary;
           }
         }
       }
@@ -73,7 +75,7 @@
 
       &:focus {
         text-decoration: underline;
-        background-color: rgba( 0, 0, 0, .2);
+        background-color: $focus;
       }
     }
   }

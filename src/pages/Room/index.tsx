@@ -12,7 +12,7 @@ import {
   UserInfo,
 } from '../../components';
 
-import { logoSvg } from '../../assets/images';
+import { Images } from '../../assets';
 
 import { useRoom, useAuth } from '../../hooks';
 import { database } from '../../services/firebase';
@@ -68,7 +68,7 @@ export function Room() {
     <div id="page-room">
       <header>
         <div className="content">
-          <img src={logoSvg} alt="LetMeAsk" />
+          <img src={Images.logo} alt="LetMeAsk" />
           <RoomCode code={roomId} />
         </div>
       </header>

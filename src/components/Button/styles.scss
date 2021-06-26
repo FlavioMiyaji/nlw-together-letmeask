@@ -1,11 +1,13 @@
+@import '../../styles/colors.scss';
+
 // TODO - PX to EM
 // TODO - Variables
 .button {
   height: 50px;
   border-radius: 8px;
   font-weight: 500;
-  background-color: #835afd;
-  color: #fefefe;
+  background-color: $primary;
+  color: $secondary100;
   padding: 0 32px;
 
   display: flex;
@@ -23,9 +25,9 @@
   }
 
   &.outlined {
-    background-color: #fefefe;
-    border: 1px solid #835afd;
-    color: #835afd;
+    background-color: $secondary100;
+    border: 1px solid $primary;
+    color: $primary;
   }
 
   &:not(:disabled):hover,

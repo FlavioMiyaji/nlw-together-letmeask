@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { copySvg } from '../../assets/images';
+import { Images } from '../../assets';
 
 import './styles.scss';
 
@@ -18,7 +18,7 @@ export function RoomCode({ code }: RoomCodeProps) {
       onClick={copyRoomCodeToClipboard}
     >
       <div>
-        <img src={copySvg} alt="Copy room code" />
+        <img src={Images.copy} alt="Copy room code" />
       </div>
       <span>Sala {code}</span>
     </button>

@@ -1,21 +1,21 @@
-import answerSvg from './answer.svg';
-import checkSvg from './check.svg';
-import copySvg from './copy.svg';
-import deleteSvg from './delete.svg';
-import emptyQuestionSvg from './empty-questions.svg';
-import googleSvg from './google-icon.svg';
-import illustrationSvg from './illustration.svg';
-import likeSvg from './like.svg';
-import logoSvg from './logo.svg';
+import answer from './answer.svg';
+import check from './check.svg';
+import copy from './copy.svg';
+import remove from './remove.svg';
+import emptyQuestion from './empty-questions.svg';
+import google from './google-icon.svg';
+import illustration from './illustration.svg';
+import like from './like.svg';
+import logo from './logo.svg';
 
 export {
-  answerSvg,
-  checkSvg,
-  copySvg,
-  deleteSvg,
-  emptyQuestionSvg,
-  googleSvg,
-  illustrationSvg,
-  likeSvg,
-  logoSvg,
+  answer,
+  check,
+  copy,
+  remove,
+  emptyQuestion,
+  google,
+  illustration,
+  like,
+  logo,
 };

@@ -5,11 +5,7 @@ import React, {
 } from 'react';
 import { useHistory } from 'react-router-dom';
 
-import {
-  googleSvg,
-  illustrationSvg,
-  logoSvg,
-} from '../../assets/images';
+import { Images } from '../../assets';
 
 import { useAuth } from '../../hooks';
 import { Button } from '../../components';
@@ -47,18 +43,18 @@ export function Home() {
   return (
     <div id="page-auth">
       <aside>
-        <img src={illustrationSvg} alt="Ilustração simbolizando perguntas e resposta" />
+        <img src={Images.illustration} alt="Ilustração simbolizando perguntas e resposta" />
         <strong>Crie salas de Q&amp;A ao-vivo</strong>
         <p>Tire as dúvidas da sua audiência em tempo-real</p>
       </aside>
       <main>
         <div className="main-content">
-          <img src={logoSvg} alt="LetMeAsk" />
+          <img src={Images.logo} alt="LetMeAsk" />
           <Button
             className="create-room"
             onClick={handleCreateRoom}
           >
-            <img src={googleSvg} alt="Logo do Google" />
+            <img src={Images.google} alt="Logo do Google" />
             Crie sua sala com o Google
           </Button>
           <div className="separator">ou entre em sua sala</div>
