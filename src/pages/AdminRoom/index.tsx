@@ -4,17 +4,19 @@ import React, {
 } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 
-import { Button, Question, RoomCode } from '../components';
+import { Button, Question, RoomCode } from '../../components';
 
-import logoSvg from '../assets/images/logo.svg';
-import deleteSvg from '../assets/images/delete.svg';
-import answerSvg from '../assets/images/answer.svg';
-import checkSvg from '../assets/images/check.svg';
+import {
+  logoSvg,
+  deleteSvg,
+  answerSvg,
+  checkSvg,
+} from '../../assets/images';
 
-import { useRoom } from '../hooks/useRoom';
+import { useRoom } from '../../hooks';
 
-import '../styles/room.scss';
-import { database } from '../services/firebase';
+import '../../styles/room.scss';
+import { database } from '../../services/firebase';
 
 type AdminRoomParams = {
   id: string;

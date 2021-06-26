@@ -5,15 +5,17 @@ import React, {
 } from 'react';
 import { useHistory } from 'react-router-dom';
 
-import illistrationSvg from '../assets/images/illustration.svg';
-import logoSvg from '../assets/images/logo.svg';
-import googleIconSvg from '../assets/images/google-icon.svg';
+import {
+  googleSvg,
+  illustrationSvg,
+  logoSvg,
+} from '../../assets/images';
 
-import { useAuth } from '../hooks/useAuth';
-import { Button } from '../components';
+import { useAuth } from '../../hooks';
+import { Button } from '../../components';
 
-import '../styles/auth.scss'
-import { database } from '../services/firebase';
+import '../../styles/auth.scss'
+import { database } from '../../services/firebase';
 
 export function Home() {
   const history = useHistory();
@@ -45,7 +47,7 @@ export function Home() {
   return (
     <div id="page-auth">
       <aside>
-        <img src={illistrationSvg} alt="Ilustração simbolizando perguntas e resposta" />
+        <img src={illustrationSvg} alt="Ilustração simbolizando perguntas e resposta" />
         <strong>Crie salas de Q&amp;A ao-vivo</strong>
         <p>Tire as dúvidas da sua audiência em tempo-real</p>
       </aside>
@@ -56,7 +58,7 @@ export function Home() {
             className="create-room"
             onClick={handleCreateRoom}
           >
-            <img src={googleIconSvg} alt="Logo do Google" />
+            <img src={googleSvg} alt="Logo do Google" />
             Crie sua sala com o Google
           </Button>
           <div className="separator">ou entre em sua sala</div>

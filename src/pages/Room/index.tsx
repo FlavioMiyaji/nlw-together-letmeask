@@ -10,15 +10,14 @@ import {
   Question,
   RoomCode,
   UserInfo,
-} from '../components';
+} from '../../components';
 
-import logoSvg from '../assets/images/logo.svg';
+import { logoSvg } from '../../assets/images';
 
-import { useRoom } from '../hooks/useRoom';
-import { useAuth } from '../hooks/useAuth';
-import { database } from '../services/firebase';
+import { useRoom, useAuth } from '../../hooks';
+import { database } from '../../services/firebase';
 
-import '../styles/room.scss';
+import '../../styles/room.scss';
 
 type RoomParams = {
   id: string;

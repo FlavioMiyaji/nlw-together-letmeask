@@ -4,14 +4,16 @@ import React, {
 } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 
-import illistrationSvg from '../assets/images/illustration.svg';
-import logoSvg from '../assets/images/logo.svg';
+import {
+  illustrationSvg,
+  logoSvg,
+} from '../../assets/images';
 
-import { database } from '../services/firebase';
-import { Button } from '../components';
+import { database } from '../../services/firebase';
+import { Button } from '../../components';
 
-import '../styles/auth.scss'
-import { useAuth } from '../hooks/useAuth';
+import '../../styles/auth.scss'
+import { useAuth } from '../../hooks';
 
 export function NewRoom() {
   const history = useHistory();
@@ -31,7 +33,7 @@ export function NewRoom() {
   return (
     <div id="page-auth">
       <aside>
-        <img src={illistrationSvg} alt="Ilustração simbolizando perguntas e resposta" />
+        <img src={illustrationSvg} alt="Ilustração simbolizando perguntas e resposta" />
         <strong>Crie salas de Q&amp;A ao-vivo</strong>
         <p>Tire as dúvidas da sua audiência em tempo-real</p>
       </aside>

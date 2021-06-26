@@ -1,6 +1,6 @@
 import React from 'react';
 
-import copySvg from '../../assets/images/copy.svg';
+import { copySvg } from '../../assets/images';
 
 import './styles.scss';
 
