@@ -67,6 +67,7 @@
       resize: vertical;
       min-height: 8rem;
       outline: none;
+      color: $heading;
 
       &:focus {
         border: 1px solid $primary;

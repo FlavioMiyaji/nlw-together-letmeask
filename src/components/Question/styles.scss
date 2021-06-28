@@ -2,6 +2,7 @@
 
 .question {
   background-color: $secondary100;
+  color: $heading;
   border-radius: 0.5rem;
   box-shadow: 0 2px 1rem $shadow;
   padding: 1.6rem;
@@ -43,11 +44,11 @@
     button {
       border: 0;
       outline: none;
-      background-color: transparent;
+      background-color: $action;
       cursor: pointer;
       transition: filter .2s;
-      padding: 4px;
-      border-radius: 2px;
+      padding: 6px;
+      border-radius: 6px;
 
       &.like-button {
         display: flex;

@@ -76,6 +76,7 @@
       box-shadow: 0 2px 1rem $shadow;
       margin-bottom: 4rem;
       outline: none;
+      color: $heading;
 
       &:focus {
         border: 1px solid $primary;

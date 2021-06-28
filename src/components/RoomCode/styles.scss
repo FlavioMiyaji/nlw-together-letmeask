@@ -7,6 +7,7 @@
   overflow: hidden;
 
   background-color: $secondary100;
+  color: $heading;
   border: 1px solid $primary;
   cursor: pointer;
   outline: none;
@@ -25,6 +26,7 @@
 
   div {
     background-color: $primary;
+    color: $secondary100;
     padding: 1rem;
     display: flex;
     justify-content: center;
