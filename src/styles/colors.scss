@@ -1,14 +1,24 @@
 $primary: #835AFD;
 
-$secondary100: #FEFEFE;
-$secondary80: #F4F0FF;
-$secondary70: #DBDCDD;
-$secondary50: #737380;
-$secondary30: #a8a8b3;
+// $secondary100: #FEFEFE;
+// $secondary80: #F4F0FF;
+// $secondary70: #DBDCDD;
+// $secondary50: #737380;
+// $secondary30: #A8A8B3;
 
-$shadow: rgba( 0, 0, 0, 0.4 );
-$focus: rgba( 0, 0, 0, .2);
-$heading: #292929;
+$secondary100: #010101;
+$secondary80: #0B0F00;
+$secondary70: #737380;
+$secondary50: #DBDCDD;
+$secondary30: #F4F0FF;
+
+// $shadow: rgba( 0, 0, 0, 0.4 );
+// $focus: rgba( 0, 0, 0, .2);
+// $heading: #292929;
+$shadow: rgba( 255, 255, 255, 0.4 );
+$focus: rgba( 255, 255, 255, .2);
+$heading: #D6D6D6;
+
 $link: #e559f9;
 
 $create-room: #ea4335;
