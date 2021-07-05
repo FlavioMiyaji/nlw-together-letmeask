@@ -199,7 +199,7 @@ yarn add classnames
 
 - [ ] Como levar o projeto para o próximo nível
   - [ ] Responsividade
-  - [ ] Tema dark
+  - [ ] Tema dark (quase)
   - [ ] Versão PWA
   - [ ] Outro banco de dados
   - [ ] Styled Components
